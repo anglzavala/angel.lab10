@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advisor | OS Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-mark">O</span>
+        <span>OS Explorer</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="windows.html">Windows</a>
+        <a href="macos.html">macOS</a>
+        <a href="linux.html">Linux</a>
+        <a href="comparison.html">Comparison</a>
+        <a href="advisor.html">Advisor</a>
+      </nav>
+
+      <a href="advisor.html" class="cta">Try the Advisor</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="page-badge">Module 5 — AI Advisor</div>
+      <div class="page-header">
+        <div>
+          <h1>AI Operating System Advisor</h1>
+        </div>
+        <p>
+          Tell the advisor what you need and it will recommend the right system based on
+          affordability, software goals, hardware, and experience level.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="advisor-layout">
+        <div class="panel">
+          <form id="advisorForm">
+            <div class="field-grid">
+              <label>
+                Budget
+                <select id="budget">
+                  <option value="low">Under $500</option>
+                  <option value="mid" selected>$500–$1,000</option>
+                  <option value="high">$1,000–$2,500</option>
+                  <option value="premium">$2,500+</option>
+                </select>
+              </label>
+
+              <label>
+                Main goal
+                <select id="goal">
+                  <option value="general" selected>General productivity</option>
+                  <option value="gaming">Gaming</option>
+                  <option value="ai">AI / machine learning</option>
+                  <option value="software">Software development</option>
+                  <option value="server">Web server / cloud</option>
+                  <option value="design">Design / media</option>
+                </select>
+              </label>
+
+              <label>
+                Hardware
+                <select id="hardware">
+                  <option value="new" selected>Modern laptop/desktop</option>
+                  <option value="older">Older machine</option>
+                  <option value="apple">Apple laptop/desktop</option>
+                </select>
+              </label>
+
+              <label>
+                Experience
+                <select id="experience">
+                  <option value="beginner" selected>Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Preferred software ecosystem
+              <select id="ecosystem">
+                <option value="broad" selected>Broad compatibility / mainstream apps</option>
+                <option value="apple">Apple ecosystem</option>
+                <option value="developer">Developer tools and terminal</option>
+                <option value="custom">Customization and control</option>
+              </select>
+            </label>
+
+            <button type="submit" class="cta">Get recommendation</button>
+          </form>
+
+          <div class="result-box" id="recommendationResult">
+            <h3>Your Recommendation</h3>
+            <p>Fill in your needs to receive a smart recommendation with trade-offs and alternatives.</p>
+          </div>
+        </div>
+
+        <div class="panel chat">
+          <div class="quick-questions">
+            <button class="quick-btn" data-question="Which OS is best for computer science students?">Computer science</button>
+            <button class="quick-btn" data-question="I want to develop AI models. Should I use Windows, macOS, or Linux?">AI development</button>
+            <button class="quick-btn" data-question="Which system is best for gaming?">Gaming</button>
+          </div>
+
+          <div class="chat-box" id="chatBox">
+            <div class="message bot">
+              Welcome! Ask a question about the best operating system for your needs.
+            </div>
+          </div>
+
+          <div class="chat-input-row">
+            <input id="chatInput" type="text" placeholder="Ask about Windows, macOS, or Linux..." />
+            <button class="cta" id="sendChat">Ask</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      OS Explorer — AI Advisor
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

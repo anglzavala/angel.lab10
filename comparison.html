@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comparison | OS Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-mark">O</span>
+        <span>OS Explorer</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="windows.html">Windows</a>
+        <a href="macos.html">macOS</a>
+        <a href="linux.html">Linux</a>
+        <a href="comparison.html">Comparison</a>
+        <a href="advisor.html">Advisor</a>
+      </nav>
+
+      <a href="advisor.html" class="cta">Try the Advisor</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="page-badge">Module 4 — Comparison</div>
+      <div class="page-header">
+        <div>
+          <h1>Interactive comparison</h1>
+        </div>
+        <p>
+          Compare the strengths and limitations of each platform across categories like security,
+          usability, cost, software compatibility, and server use.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="comparison-wrap">
+        <div class="comparison-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="security">Security</button>
+          <button class="filter-btn" data-filter="cost">Cost</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="customization">Customization</button>
+          <button class="filter-btn" data-filter="server">Server</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Windows</th>
+              <th>macOS</th>
+              <th>Linux</th>
+            </tr>
+          </thead>
+          <tbody id="comparisonTableBody">
+            <tr data-category="security">
+              <td>Security</td>
+              <td><span class="metric medium">8/10</span></td>
+              <td><span class="metric">9/10</span></td>
+              <td><span class="metric">9/10</span></td>
+            </tr>
+            <tr data-category="cost">
+              <td>Cost</td>
+              <td><span class="metric medium">7/10</span></td>
+              <td><span class="metric low">5/10</span></td>
+              <td><span class="metric">9/10</span></td>
+            </tr>
+            <tr data-category="software">
+              <td>Software compatibility</td>
+              <td><span class="metric">10/10</span></td>
+              <td><span class="metric medium">8/10</span></td>
+              <td><span class="metric medium">7/10</span></td>
+            </tr>
+            <tr data-category="customization">
+              <td>Customization</td>
+              <td><span class="metric medium">6/10</span></td>
+              <td><span class="metric medium">7/10</span></td>
+              <td><span class="metric">10/10</span></td>
+            </tr>
+            <tr data-category="server">
+              <td>Server use</td>
+              <td><span class="metric medium">7/10</span></td>
+              <td><span class="metric medium">6/10</span></td>
+              <td><span class="metric">10/10</span></td>
+            </tr>
+            <tr data-category="usability">
+              <td>Ease of use</td>
+              <td><span class="metric">9/10</span></td>
+              <td><span class="metric">9/10</span></td>
+              <td><span class="metric medium">6/10</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      OS Explorer — Comparison Module
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
